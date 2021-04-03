@@ -7,8 +7,14 @@
 #define SEGMENT_LINKSBOVEN    8
 #define SEGMENT_MIDDEN        9
 
-#define LED_AAN		LOW
-#define LED_UIT		HIGH
+// Als de segmentdisplay een gemeenschappelijke PLUS heeft zorgt LOW (0V) dat de led brandt
+//#define LED_AAN		LOW
+//#define LED_UIT		HIGH
+
+// Als de segmentdisplay een gemeenschappelijke MIN heeft zorgt HIGH (5V) dat de led brandt
+#define LED_AAN		HIGH
+#define LED_UIT		LOW
+
 
 void setup() {
   pinMode(SEGMENT_PUNT, OUTPUT);
