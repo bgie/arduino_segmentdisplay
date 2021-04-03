@@ -39,20 +39,20 @@ void loop() {
   delay(1000);
 
   // 1 voor 1 alle segmenten naar aan
-  digitalWrite(SEGMENT_PUNT, HIGH);
+  digitalWrite(SEGMENT_PUNT, LED_AAN);
   delay(1000);
-  digitalWrite(SEGMENT_BOVEN, HIGH);
+  digitalWrite(SEGMENT_BOVEN, LED_AAN);
   delay(1000);
-  digitalWrite(SEGMENT_RECHTSBOVEN, HIGH);
+  digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
   delay(1000);
-  digitalWrite(SEGMENT_RECHTSONDER, HIGH);
+  digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
   delay(1000);
-  digitalWrite(SEGMENT_ONDER, HIGH);
+  digitalWrite(SEGMENT_ONDER, LED_AAN);
   delay(1000);
-  digitalWrite(SEGMENT_LINKSONDER, HIGH);
+  digitalWrite(SEGMENT_LINKSONDER, LED_AAN);
   delay(1000);
-  digitalWrite(SEGMENT_LINKSBOVEN, HIGH);
+  digitalWrite(SEGMENT_LINKSBOVEN, LED_AAN);
   delay(1000);
-  digitalWrite(SEGMENT_MIDDEN, HIGH);
+  digitalWrite(SEGMENT_MIDDEN, LED_AAN);
   delay(1000);
 }
