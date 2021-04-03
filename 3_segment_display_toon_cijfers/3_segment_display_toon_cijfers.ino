@@ -7,6 +7,9 @@
 #define SEGMENT_LINKSBOVEN    8
 #define SEGMENT_MIDDEN        9
 
+#define LED_AAN		LOW
+#define LED_UIT		HIGH
+
 void setup() {
   pinMode(SEGMENT_PUNT, OUTPUT);
   pinMode(SEGMENT_BOVEN, OUTPUT);
@@ -22,104 +25,104 @@ void toonCijfer(int cijfer)
 {
   switch(cijfer) {
     case 0:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, LOW);
-      digitalWrite(SEGMENT_LINKSONDER, LOW);
-      digitalWrite(SEGMENT_LINKSBOVEN, LOW);
-      digitalWrite(SEGMENT_MIDDEN, HIGH);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_MIDDEN, LED_UIT);
       break;
     case 1:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, HIGH);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSBOVEN, HIGH);
-      digitalWrite(SEGMENT_MIDDEN, HIGH);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_UIT);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_UIT);
+      digitalWrite(SEGMENT_MIDDEN, LED_UIT);
       break;
     case 2:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, HIGH);
-      digitalWrite(SEGMENT_ONDER, LOW);
-      digitalWrite(SEGMENT_LINKSONDER, LOW);
-      digitalWrite(SEGMENT_LINKSBOVEN, HIGH);
-      digitalWrite(SEGMENT_MIDDEN, LOW);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_UIT);
+      digitalWrite(SEGMENT_ONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_UIT);
+      digitalWrite(SEGMENT_MIDDEN, LED_AAN);
       break;
     case 3:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, LOW);
-      digitalWrite(SEGMENT_LINKSONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSBOVEN, HIGH);
-      digitalWrite(SEGMENT_MIDDEN, LOW);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_UIT);
+      digitalWrite(SEGMENT_MIDDEN, LED_AAN);
       break;
     case 4:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, HIGH);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSBOVEN, LOW);
-      digitalWrite(SEGMENT_MIDDEN, LOW);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_UIT);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_MIDDEN, LED_AAN);
       break;
     case 5:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, HIGH);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, LOW);
-      digitalWrite(SEGMENT_LINKSONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSBOVEN, LOW);
-      digitalWrite(SEGMENT_MIDDEN, LOW);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_UIT);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_MIDDEN, LED_AAN);
       break;
     case 6:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, HIGH);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, LOW);
-      digitalWrite(SEGMENT_LINKSONDER, LOW);
-      digitalWrite(SEGMENT_LINKSBOVEN, LOW);
-      digitalWrite(SEGMENT_MIDDEN, LOW);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_UIT);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_MIDDEN, LED_AAN);
       break;
     case 7:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSBOVEN, HIGH);
-      digitalWrite(SEGMENT_MIDDEN, HIGH);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_UIT);
+      digitalWrite(SEGMENT_MIDDEN, LED_UIT);
       break;
     case 8:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, LOW);
-      digitalWrite(SEGMENT_LINKSONDER, LOW);
-      digitalWrite(SEGMENT_LINKSBOVEN, LOW);
-      digitalWrite(SEGMENT_MIDDEN, LOW);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_MIDDEN, LED_AAN);
       break;
     case 9:
-      digitalWrite(SEGMENT_PUNT, HIGH);
-      digitalWrite(SEGMENT_BOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
-      digitalWrite(SEGMENT_RECHTSONDER, LOW);
-      digitalWrite(SEGMENT_ONDER, LOW);
-      digitalWrite(SEGMENT_LINKSONDER, HIGH);
-      digitalWrite(SEGMENT_LINKSBOVEN, LOW);
-      digitalWrite(SEGMENT_MIDDEN, LOW);
+      digitalWrite(SEGMENT_PUNT, LED_UIT);
+      digitalWrite(SEGMENT_BOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_RECHTSONDER, LED_AAN);
+      digitalWrite(SEGMENT_ONDER, LED_AAN);
+      digitalWrite(SEGMENT_LINKSONDER, LED_UIT);
+      digitalWrite(SEGMENT_LINKSBOVEN, LED_AAN);
+      digitalWrite(SEGMENT_MIDDEN, LED_AAN);
       break;
   }
 }
