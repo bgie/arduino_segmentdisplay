@@ -18,33 +18,41 @@ void setup() {
   pinMode(SEGMENT_MIDDEN, OUTPUT);
 }
 
+// Als de segmentdisplay een gemeenschappelijke PLUS heeft zorgt LED_AAN (0V) dat de led brandt
+//#define LED_AAN		LOW
+//#define LED_UIT		HIGH
+
+// Als de segmentdisplay een gemeenschappelijke MIN heeft zorgt HIGH (5V) dat de led brandt
+#define LED_AAN		HIGH
+#define LED_UIT		LOW
+
 void loop() {  
-  // Alle segmenten naar +5V = leds UIT
-  digitalWrite(SEGMENT_PUNT, HIGH);
-  digitalWrite(SEGMENT_BOVEN, HIGH);
-  digitalWrite(SEGMENT_RECHTSBOVEN, HIGH);
-  digitalWrite(SEGMENT_RECHTSONDER, HIGH);
-  digitalWrite(SEGMENT_ONDER, HIGH);
-  digitalWrite(SEGMENT_LINKSONDER, HIGH);
-  digitalWrite(SEGMENT_LINKSBOVEN, HIGH);
-  digitalWrite(SEGMENT_MIDDEN, HIGH);
+  // Alle segmenten uit
+  digitalWrite(SEGMENT_PUNT, LED_UIT);
+  digitalWrite(SEGMENT_BOVEN, LED_UIT);
+  digitalWrite(SEGMENT_RECHTSBOVEN, LED_UIT);
+  digitalWrite(SEGMENT_RECHTSONDER, LED_UIT);
+  digitalWrite(SEGMENT_ONDER, LED_UIT);
+  digitalWrite(SEGMENT_LINKSONDER, LED_UIT);
+  digitalWrite(SEGMENT_LINKSBOVEN, LED_UIT);
+  digitalWrite(SEGMENT_MIDDEN, LED_UIT);
   delay(1000);
 
-  // 1 voor 1 alle segmenten naar 0V = led AAN
-  digitalWrite(SEGMENT_PUNT, LOW);
+  // 1 voor 1 alle segmenten naar aan
+  digitalWrite(SEGMENT_PUNT, HIGH);
   delay(1000);
-  digitalWrite(SEGMENT_BOVEN, LOW);
+  digitalWrite(SEGMENT_BOVEN, HIGH);
   delay(1000);
-  digitalWrite(SEGMENT_RECHTSBOVEN, LOW);
+  digitalWrite(SEGMENT_RECHTSBOVEN, HIGH);
   delay(1000);
-  digitalWrite(SEGMENT_RECHTSONDER, LOW);
+  digitalWrite(SEGMENT_RECHTSONDER, HIGH);
   delay(1000);
-  digitalWrite(SEGMENT_ONDER, LOW);
+  digitalWrite(SEGMENT_ONDER, HIGH);
   delay(1000);
-  digitalWrite(SEGMENT_LINKSONDER, LOW);
+  digitalWrite(SEGMENT_LINKSONDER, HIGH);
   delay(1000);
-  digitalWrite(SEGMENT_LINKSBOVEN, LOW);
+  digitalWrite(SEGMENT_LINKSBOVEN, HIGH);
   delay(1000);
-  digitalWrite(SEGMENT_MIDDEN, LOW);
+  digitalWrite(SEGMENT_MIDDEN, HIGH);
   delay(1000);
 }
