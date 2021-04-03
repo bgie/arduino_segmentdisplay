@@ -1,11 +1,11 @@
 #define PIN_SEGMENT_PUNT          2
-#define PIN_SEGMENT_BOVEN         8
-#define PIN_SEGMENT_RECHTSBOVEN   9
-#define PIN_SEGMENT_RECHTSONDER   3
-#define PIN_SEGMENT_ONDER         5
-#define PIN_SEGMENT_LINKSONDER    4
-#define PIN_SEGMENT_LINKSBOVEN    7
-#define PIN_SEGMENT_MIDDEN        6
+#define PIN_SEGMENT_BOVEN         3
+#define PIN_SEGMENT_RECHTSBOVEN   4
+#define PIN_SEGMENT_RECHTSONDER   5
+#define PIN_SEGMENT_ONDER         6
+#define PIN_SEGMENT_LINKSONDER    7
+#define PIN_SEGMENT_LINKSBOVEN    8
+#define PIN_SEGMENT_MIDDEN        9
 
 void setup() {
   pinMode(PIN_SEGMENT_PUNT, OUTPUT);
